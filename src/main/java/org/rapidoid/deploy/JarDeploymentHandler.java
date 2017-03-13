@@ -1,4 +1,12 @@
-package org.rapidoid.platform;
+package org.rapidoid.deploy;
+
+import org.rapidoid.RapidoidThing;
+import org.rapidoid.annotation.Authors;
+import org.rapidoid.annotation.Since;
+import org.rapidoid.http.NiceResponse;
+import org.rapidoid.http.Req;
+import org.rapidoid.http.ReqHandler;
+import org.rapidoid.util.Msc;
 
 /*
  * #%L
@@ -20,22 +28,20 @@ package org.rapidoid.platform;
  * #L%
  */
 
-import org.junit.Test;
-import org.rapidoid.annotation.Authors;
-import org.rapidoid.annotation.Since;
-import org.rapidoid.deploy.AppDownloader;
-import org.rapidoid.test.TestCommons;
-
 @Authors("Nikolche Mihajlovski")
-@Since("5.3.0")
-public class AppDownloaderTest extends TestCommons {
+@Since("5.1.0")
+public class JarDeploymentHandler extends RapidoidThing implements ReqHandler {
 
-	@Test
-	public void testAppUrlConstruction() {
-		eq(AppDownloader.getAppUrl("abc"), "https://github.com/rapidoid/abc/archive/master.zip");
-		eq(AppDownloader.getAppUrl("foo/bar"), "https://github.com/foo/bar/archive/master.zip");
-		eq(AppDownloader.getAppUrl("https://a.b.c.d.e"), "https://a.b.c.d.e");
-		eq(AppDownloader.getAppUrl("a/"), "a/");
+	@Override
+	public Object execute(Req req) {
+
+		try {
+			AppDeployer.deploy(Msc.mainAppJar() + ".staged", Msc.mainAppJar());
+		} catch (Exception e) {
+			return NiceResponse.err(req, e);
+		}
+
+		return NiceResponse.ok(req, "Successfully deployed the application");
 	}
 
 }
