@@ -23,10 +23,11 @@ package org.rapidoid.platform;
 import org.rapidoid.RapidoidThing;
 import org.rapidoid.annotation.Authors;
 import org.rapidoid.annotation.Since;
+import org.rapidoid.util.Msc;
 
 @Authors("Nikolche Mihajlovski")
 @Since("5.4.6")
-public class RunInSingleAppMode extends RapidoidThing {
+public class RunInSingleAppDevMode extends RapidoidThing {
 
 	private static final String[] ARGS = {
 		"dev",
@@ -34,6 +35,7 @@ public class RunInSingleAppMode extends RapidoidThing {
 	};
 
 	public static void main(String[] args) {
+		Msc.dockerized(true);
 		Main.main(ARGS);
 	}
 

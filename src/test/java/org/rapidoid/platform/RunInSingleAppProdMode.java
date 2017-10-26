@@ -23,14 +23,21 @@ package org.rapidoid.platform;
 import org.rapidoid.RapidoidThing;
 import org.rapidoid.annotation.Authors;
 import org.rapidoid.annotation.Since;
+import org.rapidoid.util.Msc;
 
 @Authors("Nikolche Mihajlovski")
-@Since("5.4.5")
-public class RunInProdMode extends RapidoidThing {
+@Since("5.4.6")
+public class RunInSingleAppProdMode extends RapidoidThing {
 
-	private static final String[] ARGS = {"mode=production"};
+	private static final String[] ARGS = {
+		"mode=production",
+		"root=" + PlatformTestCommons.appPath("app1"),
+		"app.services=ping",
+		"admin.services=status",
+	};
 
 	public static void main(String[] args) {
+		Msc.dockerized(true);
 		Main.main(ARGS);
 	}
 
