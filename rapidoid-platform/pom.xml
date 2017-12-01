@@ -78,10 +78,6 @@
 			<resource>
 				<directory>../dist</directory>
 				<filtering>false</filtering>
-				<excludes>
-					<exclude>**/*.js</exclude>
-					<exclude>**/*.css</exclude>
-				</excludes>
 			</resource>
 		</resources>
 
