@@ -22,14 +22,19 @@ package org.rapidoid.goodies;
 
 import org.rapidoid.annotation.Authors;
 import org.rapidoid.annotation.Since;
-import org.rapidoid.deploy.handler.DeployHandler;
 import org.rapidoid.deploy.handler.AppDeploymentHandler;
 import org.rapidoid.deploy.handler.AppStagingHandler;
+import org.rapidoid.deploy.handler.DeployHandler;
 import org.rapidoid.setup.Setup;
 
 @Authors("Nikolche Mihajlovski")
 @Since("5.3.3")
 public class PlatformGoodies extends Goodies {
+
+	public static void processes(Setup setup) {
+		setup.page(uri("processes")).zone(CENTER).mvc(new ProcessesHandler());
+		setup.page(uri("processes/{id}")).zone(CENTER).mvc(new ProcessDetailsHandler());
+	}
 
 	public static void deployment(Setup setup) {
 		setup.page(uri("deployment")).zone(Goodies.CENTER).mvc(new DeployHandler());
@@ -40,6 +45,7 @@ public class PlatformGoodies extends Goodies {
 	public static void platformAdminCenter(Setup setup) {
 		adminCenter(setup);
 		deployment(setup);
+		processes(setup);
 	}
 
 }
