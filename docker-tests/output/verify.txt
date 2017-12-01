@@ -1,0 +1,3 @@
+INFO | Starting Rapidoid v<?>, built on <?> [Dockerized] [Uniform output]
+INFO | System info | os = Linux | java = <?> | process = <?> | max memory = <?> | dir = /opt
+INFO | Docker environment was verified!

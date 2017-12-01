@@ -1,0 +1,4 @@
+id: my-platform
+
+rapidoid:
+  port: 4444
