@@ -132,7 +132,9 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 				<configuration>
-					<argLine>${jdk9.modules} -Xms512m -Xmx1024m -Dfile.encoding=${project.build.sourceEncoding}</argLine>
+					<argLine>
+						${jdk9.modules} -Xms512m -Xmx1024m -Dfile.encoding=${project.build.sourceEncoding}
+					</argLine>
 				</configuration>
 			</plugin>
 
