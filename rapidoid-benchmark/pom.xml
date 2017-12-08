@@ -19,6 +19,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.rapidoid</groupId>
+			<artifactId>rapidoid-process</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.rapidoid</groupId>
 			<artifactId>rapidoid-web</artifactId>
 			<version>${rapidoid.framework.version}</version>
 		</dependency>

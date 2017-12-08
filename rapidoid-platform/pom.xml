@@ -28,9 +28,9 @@
 			<version>${rapidoid.framework.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.rapidoid</groupId>
-			<artifactId>rapidoid-fluent</artifactId>
-			<version>${rapidoid.framework.version}</version>
+			<groupId>org.essentials4j</groupId>
+			<artifactId>essentials4j</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>

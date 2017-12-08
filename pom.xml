@@ -48,7 +48,7 @@
 		<test.jvm.argLine>-server -verbose:gc</test.jvm.argLine>
 		<jdk9.modules/>
 
-		<rapidoid.framework.version>5.4.7-SNAPSHOT</rapidoid.framework.version>
+		<rapidoid.framework.version>5.5.0</rapidoid.framework.version>
 
 		<timestamp>${maven.build.timestamp}</timestamp>
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm z</maven.build.timestamp.format>
