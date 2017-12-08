@@ -1,19 +1,4 @@
-package org.rapidoid.deploy.handler;
-
-import org.rapidoid.annotation.Authors;
-import org.rapidoid.annotation.Since;
-import org.rapidoid.deploy.AppDeployment;
-import org.rapidoid.deploy.Apps;
-import org.rapidoid.deploy.SingleApp;
-import org.rapidoid.gui.GUI;
-import org.rapidoid.http.NiceResponse;
-import org.rapidoid.http.Req;
-import org.rapidoid.http.ReqHandler;
-import org.rapidoid.io.Upload;
-import org.rapidoid.log.Log;
-import org.rapidoid.platform.PlatformOpts;
-
-/*
+/*-
  * #%L
  * rapidoid-platform
  * %%
@@ -34,6 +19,23 @@ import org.rapidoid.platform.PlatformOpts;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.deploy.handler;
+
+
+import org.rapidoid.annotation.Authors;
+import org.rapidoid.annotation.Since;
+import org.rapidoid.deploy.AppDeployment;
+import org.rapidoid.deploy.Apps;
+import org.rapidoid.deploy.SingleApp;
+import org.rapidoid.gui.GUI;
+import org.rapidoid.http.NiceResponse;
+import org.rapidoid.http.Req;
+import org.rapidoid.http.ReqHandler;
+import org.rapidoid.io.Upload;
+import org.rapidoid.log.Log;
+import org.rapidoid.platform.PlatformOpts;
+
 
 @Authors("Nikolche Mihajlovski")
 @Since("5.1.0")

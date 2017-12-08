@@ -1,12 +1,4 @@
-package org.rapidoid.process;
-
-import org.rapidoid.RapidoidThing;
-import org.rapidoid.annotation.Authors;
-import org.rapidoid.annotation.Since;
-
-import java.io.File;
-
-/*
+/*-
  * #%L
  * rapidoid-process
  * %%
@@ -27,6 +19,16 @@ import java.io.File;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.process;
+
+
+import org.rapidoid.RapidoidThing;
+import org.rapidoid.annotation.Authors;
+import org.rapidoid.annotation.Since;
+
+import java.io.File;
+
 
 @Authors("Nikolche Mihajlovski")
 @Since("5.3.0")

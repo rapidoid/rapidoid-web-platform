@@ -1,6 +1,4 @@
-package org.rapidoid.log.slf4j;
-
-/*
+/*-
  * #%L
  * rapidoid-platform
  * %%
@@ -21,6 +19,9 @@ package org.rapidoid.log.slf4j;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.log.slf4j;
+
 
 import org.rapidoid.RapidoidThing;
 import org.rapidoid.annotation.Authors;

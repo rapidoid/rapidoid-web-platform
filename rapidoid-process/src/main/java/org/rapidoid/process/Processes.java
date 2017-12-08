@@ -1,6 +1,4 @@
-package org.rapidoid.process;
-
-/*
+/*-
  * #%L
  * rapidoid-process
  * %%
@@ -21,6 +19,9 @@ package org.rapidoid.process;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.process;
+
 
 import org.rapidoid.annotation.Authors;
 import org.rapidoid.annotation.Since;

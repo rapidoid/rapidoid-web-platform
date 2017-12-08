@@ -1,11 +1,4 @@
-package org.rapidoid.goodies;
-
-import org.rapidoid.annotation.Authors;
-import org.rapidoid.annotation.Since;
-import org.rapidoid.setup.IGoodies;
-import org.rapidoid.setup.Setup;
-
-/*
+/*-
  * #%L
  * rapidoid-platform
  * %%
@@ -26,6 +19,15 @@ import org.rapidoid.setup.Setup;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.goodies;
+
+
+import org.rapidoid.annotation.Authors;
+import org.rapidoid.annotation.Since;
+import org.rapidoid.setup.IGoodies;
+import org.rapidoid.setup.Setup;
+
 
 @Authors("Nikolche Mihajlovski")
 @Since("5.3.3")

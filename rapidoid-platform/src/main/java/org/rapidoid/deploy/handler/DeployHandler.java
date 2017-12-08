@@ -1,20 +1,4 @@
-package org.rapidoid.deploy.handler;
-
-import org.rapidoid.annotation.Authors;
-import org.rapidoid.annotation.Since;
-import org.rapidoid.gui.GUI;
-import org.rapidoid.html.Tag;
-import org.rapidoid.http.Current;
-import org.rapidoid.http.HttpVerb;
-import org.rapidoid.http.Req;
-import org.rapidoid.http.ReqHandler;
-import org.rapidoid.u.U;
-import org.rapidoid.util.Tokens;
-
-import java.util.List;
-import java.util.Map;
-
-/*
+/*-
  * #%L
  * rapidoid-platform
  * %%
@@ -35,6 +19,24 @@ import java.util.Map;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.deploy.handler;
+
+
+import org.rapidoid.annotation.Authors;
+import org.rapidoid.annotation.Since;
+import org.rapidoid.gui.GUI;
+import org.rapidoid.html.Tag;
+import org.rapidoid.http.Current;
+import org.rapidoid.http.HttpVerb;
+import org.rapidoid.http.Req;
+import org.rapidoid.http.ReqHandler;
+import org.rapidoid.u.U;
+import org.rapidoid.util.Tokens;
+
+import java.util.List;
+import java.util.Map;
+
 
 @Authors("Nikolche Mihajlovski")
 @Since("5.1.0")

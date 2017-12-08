@@ -1,13 +1,4 @@
-package org.rapidoid.deploy;
-
-import org.rapidoid.RapidoidThing;
-import org.rapidoid.annotation.Authors;
-import org.rapidoid.annotation.Since;
-import org.rapidoid.log.Log;
-import org.rapidoid.platform.PlatformOpts;
-import org.rapidoid.util.LazyInit;
-
-/*
+/*-
  * #%L
  * rapidoid-platform
  * %%
@@ -28,6 +19,17 @@ import org.rapidoid.util.LazyInit;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.deploy;
+
+
+import org.rapidoid.RapidoidThing;
+import org.rapidoid.annotation.Authors;
+import org.rapidoid.annotation.Since;
+import org.rapidoid.log.Log;
+import org.rapidoid.platform.PlatformOpts;
+import org.rapidoid.util.LazyInit;
+
 
 @Authors("Nikolche Mihajlovski")
 @Since("5.4.7")

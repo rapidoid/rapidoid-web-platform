@@ -1,5 +1,3 @@
-package org.rapidoid.deploy;
-
 /*-
  * #%L
  * rapidoid-platform
@@ -21,6 +19,9 @@ package org.rapidoid.deploy;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.deploy;
+
 
 import org.rapidoid.annotation.Authors;
 import org.rapidoid.annotation.Since;

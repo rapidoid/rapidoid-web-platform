@@ -1,6 +1,4 @@
-package org.rapidoid.benchmark.lowlevel;
-
-/*
+/*-
  * #%L
  * rapidoid-benchmark
  * %%
@@ -21,6 +19,9 @@ package org.rapidoid.benchmark.lowlevel;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.benchmark.lowlevel;
+
 
 import org.rapidoid.RapidoidThing;
 import org.rapidoid.config.Conf;

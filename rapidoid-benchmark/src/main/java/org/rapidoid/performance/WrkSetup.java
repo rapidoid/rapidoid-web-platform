@@ -1,6 +1,4 @@
-package org.rapidoid.performance;
-
-/*
+/*-
  * #%L
  * rapidoid-benchmark
  * %%
@@ -21,6 +19,9 @@ package org.rapidoid.performance;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.performance;
+
 
 import org.rapidoid.RapidoidThing;
 import org.rapidoid.annotation.Authors;

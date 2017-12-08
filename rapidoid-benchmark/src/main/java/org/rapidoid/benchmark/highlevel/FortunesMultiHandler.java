@@ -1,6 +1,4 @@
-package org.rapidoid.benchmark.highlevel;
-
-/*
+/*-
  * #%L
  * rapidoid-benchmark
  * %%
@@ -21,6 +19,9 @@ package org.rapidoid.benchmark.highlevel;
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
+package org.rapidoid.benchmark.highlevel;
+
 
 import org.rapidoid.benchmark.common.Fortune;
 import org.rapidoid.http.Req;
